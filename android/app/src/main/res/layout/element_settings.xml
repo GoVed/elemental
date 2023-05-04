@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_all_80alpha">
+
+    <TextView
+        android:id="@+id/titleSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="4dp"
+        android:text="Sort"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetCombineElementsAfterSuccess" />
+
+    <TextView
+        android:id="@+id/elementSortType"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:gravity="center_horizontal|center_vertical"
+        android:minWidth="48dp"
+        android:text="↑"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/titleSort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/titleSort"
+        app:layout_constraintTop_toTopOf="@+id/titleSort" />
+
+    <TextView
+        android:id="@+id/elementSortMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Last Unlocked"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/titleSort"
+        app:layout_constraintEnd_toStartOf="@+id/elementSortType"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/titleSort"
+        app:layout_constraintTop_toTopOf="@+id/titleSort" />
+
+    <TextView
+        android:id="@+id/columnCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Columns"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/columnCount1"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="4dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/columnCount"
+        app:layout_constraintStart_toEndOf="@+id/columnCount"
+        app:layout_constraintTop_toTopOf="@+id/columnCount" />
+
+    <TextView
+        android:id="@+id/columnCount2"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="4dp"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/columnCount"
+        app:layout_constraintStart_toEndOf="@+id/columnCount1"
+        app:layout_constraintTop_toTopOf="@+id/columnCount" />
+
+    <TextView
+        android:id="@+id/columnCount3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="4dp"
+        android:text="3"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/columnCount"
+        app:layout_constraintStart_toEndOf="@+id/columnCount2"
+        app:layout_constraintTop_toTopOf="@+id/columnCount" />
+
+    <TextView
+        android:id="@+id/columnCount4"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="4dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/columnCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/columnCount3"
+        app:layout_constraintTop_toTopOf="@+id/columnCount" />
+
+    <TextView
+        android:id="@+id/showLockedElements"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="8dp"
+        android:text="Show Locked Elements"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/splitLockedElements"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showCategories" />
+
+    <TextView
+        android:id="@+id/showElementScrollAnimation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="8dp"
+        android:text="Show Scroll Animation"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showLockedElements" />
+
+    <TextView
+        android:id="@+id/showCategories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="8dp"
+        android:text="Show Categories"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/columnCount1" />
+
+    <TextView
+        android:id="@+id/splitLockedElements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="8dp"
+        android:text="Splitted"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/showLockedElements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/showLockedElements" />
+
+    <TextView
+        android:id="@+id/resetCombineElementsAfterSuccess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_all_primary"
+        android:padding="8dp"
+        android:text="Reset Combination After Combining"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showElementScrollAnimation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/combineFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CombineFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/suggestNew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_left_primary"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="Suggest"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/closeSuggestNew"
+            app:layout_constraintStart_toStartOf="@+id/combine_rv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/closeSuggestNew"
+            android:layout_width="48dp"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_right_red"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="8dp"
+            android:text="X"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/suggestNew"
+            app:layout_constraintEnd_toEndOf="@+id/combine_rv"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/suggestNew" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/combine_rv"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_top_light_gray"
+            android:minHeight="50dp"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suggestNew"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/elements_rv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bottom_light_gray"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/pins_rv">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/combine_rv"
+            app:layout_constraintTop_toBottomOf="@+id/combine_rv"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/openHints"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_bottomleft_primary"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="💡"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/combineButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:text="@string/combine"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/addRandomElement"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/rounded_bottomright_primary"
+                android:minHeight="40dp"
+                android:text="⚄"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/layoutBG"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/combine_rv"
+            app:layout_constraintTop_toBottomOf="@+id/yourElementsHeading">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_search" />
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@android:string/search_go"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0"
+                android:background="@drawable/rounded_left_gold"
+                android:padding="8dp"
+                android:text="0 💵"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yourElementsHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_top_dark_gray"
+            android:padding="4dp"
+            android:text="@string/loading"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/openElementsSetting"
+            android:layout_width="48dp"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_topright_primary"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="⚙"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/yourElementsHeading"
+            app:layout_constraintEnd_toEndOf="@+id/elements_rv"
+            app:layout_constraintTop_toTopOf="@+id/yourElementsHeading" />
+
+        <TextView
+            android:id="@+id/pinTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@color/layoutBG"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="8dp"
+            android:text="📌"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pins_rv"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pins_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/layoutBG"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/pinTitle"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

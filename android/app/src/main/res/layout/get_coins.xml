@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_all_80alpha"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/watchAd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_all_primary"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="Watch Ad [+5💵]"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

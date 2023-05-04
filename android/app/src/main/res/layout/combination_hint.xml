@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_all_80alpha"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/unlockNewElement"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_all_primary"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="Whole Combination [-100 💵]"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/unlockSingleElement"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_all_primary"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="Single Element [-50 💵]"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>

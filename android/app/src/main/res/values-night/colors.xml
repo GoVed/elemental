@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5050AA</color>
+    <color name="colorPrimaryDark">#202020</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="pureBlack">#000000</color>
+    <color name="layoutBG">#505050</color>
+    <color name="layoutBG80">#C8505050</color>
+    <color name="layoutTitleBG">#303030</color>
+    <color name="text">#E0E0E0</color>
+    <color name="gold">#B29700</color>
+    <color name="errorRed">#AA1111</color>
+</resources>

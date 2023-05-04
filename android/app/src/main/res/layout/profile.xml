@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainProfileLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_all_80alpha"
+    android:minWidth="250dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_dark_gray"
+        android:minWidth="250dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/titleUnlocked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elements Unlocked :"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profileElementsUnlocked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titleUnlocked"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Elements Created :"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/titleUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/titleUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/titleUnlocked" />
+
+        <TextView
+            android:id="@+id/profileElementsCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/profileElementsUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/profileElementsUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/profileElementsUnlocked" />
+
+        <TextView
+            android:id="@+id/titleBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Balance :"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/titleUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/titleUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/titleCreated" />
+
+        <TextView
+            android:id="@+id/profileBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Private"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/profileElementsUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/profileElementsUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/profileElementsCreated" />
+
+        <TextView
+            android:id="@+id/titleRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rank :"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/titleUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/titleUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/titleBalance" />
+
+        <TextView
+            android:id="@+id/profileRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/profileElementsUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/profileElementsUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/profileBalance" />
+
+        <TextView
+            android:id="@+id/titleOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Last Online :"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/titleUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/titleUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/titleRank" />
+
+        <TextView
+            android:id="@+id/profileOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Offline"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/profileElementsUnlocked"
+            app:layout_constraintStart_toStartOf="@+id/profileElementsUnlocked"
+            app:layout_constraintTop_toBottomOf="@+id/profileRank" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/profileStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/removeUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_all_red"
+        android:padding="4dp"
+        android:text="Reset Username"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/reportUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_all_yellow"
+        android:padding="4dp"
+        android:text="Report Username"
+        android:textAlignment="center"
+        android:visibility="gone" />
+</LinearLayout>

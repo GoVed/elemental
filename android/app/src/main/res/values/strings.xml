@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Elemental</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_elements">Your Elements</string>
+    <string name="combine">Combine</string>
+    <string name="loading">Loading...</string>
+    <string name="new_version_available">New version is available on Play Store, Please Update!</string>
+    <string name="refer_info">When your referral code is used by someone. You and the referred user will get 150 💵.</string>
+    <string name="copy_uid">Copy your code</string>
+    <string name="share">Share</string>
+    <string name="title_referred_users">Referred Users</string>
+    <string name="credits">Developed by Ved Suthar\nOriginal idea of CaryKH\nBackground music : Kevin MacLeod ~ Enchanted Valley</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="signingin">Signing In</string>
+</resources>
